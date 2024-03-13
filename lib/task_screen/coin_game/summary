@@ -1,0 +1,10 @@
+1) Develop a program which contains this functionalities
+
+- User Enter Number Of players In TextField
+- User Enter Number Of Coins in TextField
+- The Coins Will have Random Value Between 1 to 100
+- Divide Coins Between Players In Sequence
+- Display Which Player Has Maximum  Number Of Coins
+- Display Which Player has maximum Coin Value
+- Display All Player With Number Of Coins And Total Value Of Coins
+- No internet is required for this task

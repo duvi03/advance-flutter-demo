@@ -1,0 +1,7 @@
+Expense tracker app
+
+— Create add new expense
+— Delete expense
+— Display list of all expense
+— Display chart in weekday and date for the start of the week should be Sunday
+— Convert overall expense list into daily expense summary (In chart)

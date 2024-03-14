@@ -44,7 +44,7 @@ class HomeScreen extends StatelessWidget {
           },
         ),
         ListTile(
-          title: CommonWidgets.customTextView(text: "Static Screen Task"),
+          title: CommonWidgets.customTextView(text: "Static UI Screen Task"),
           subtitle: CommonWidgets.customTextView(text: "News setting page"),
           trailing: const Icon(Icons.arrow_forward_ios,color: Colors.white,),
           tileColor: Colors.yellow[900],

@@ -2,8 +2,8 @@ import 'package:demo/core/z_file_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class StaticNewsDetailScreen extends StatelessWidget {
-  const StaticNewsDetailScreen({super.key});
+class NewsDetailScreen extends StatelessWidget {
+  const NewsDetailScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

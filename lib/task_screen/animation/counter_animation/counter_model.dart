@@ -55,7 +55,7 @@ class CounterModel extends ChangeNotifier {
                             child: Container(
                                 width: 224.sp,
                                 height: 180.sp,
-                              child: Image.asset('images/exam_rotation.png'),
+                              child: Image.asset('assets/images/exam_rotation.png'),
                             ),
                           ),
                         ),

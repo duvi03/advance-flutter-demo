@@ -36,7 +36,7 @@ class NewsDetailScreen extends StatelessWidget {
                           bottomLeft: Radius.circular(10.sp),
                         ),
                         child: Image.asset(
-                          "images/image_1.jpeg",
+                          "assets/images/image_1.jpeg",
                           height: 300.sp,
                           width: double.infinity,
                           fit: BoxFit.cover,

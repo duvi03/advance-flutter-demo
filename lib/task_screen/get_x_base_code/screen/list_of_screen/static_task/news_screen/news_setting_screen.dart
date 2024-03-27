@@ -50,7 +50,7 @@ class NewSettingScreen extends StatelessWidget {
                           ),
                           child: ClipOval(
                             child: Image.asset(
-                              "images/user_1.png",
+                              "assets/images/user_1.png",
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -279,7 +279,7 @@ class NewSettingScreen extends StatelessWidget {
                                       child: ClipRRect(
                                         borderRadius: BorderRadius.circular(12.sp),
                                         child: Image.asset(
-                                          "images/user_1.png",
+                                          "assets/images/user_1.png",
                                           fit: BoxFit.cover,
                                           height: 120.sp,
                                           width: 120.sp,

@@ -2,14 +2,13 @@ import 'package:demo/core/constant/shape_dashboard.dart';
 import 'package:demo/core/z_file_core.dart';
 import 'package:demo/my_dashboard_screen/widget/common_card.dart';
 import 'package:demo/my_dashboard_screen/widget/common_navigator.dart';
-import 'package:demo/task_screen/coin_game/coin_game_screen.dart';
-import 'package:demo/task_screen/counter_animation/counter_widget.dart';
+import 'package:demo/task_screen/animation/animation_screen.dart';
 import 'package:demo/task_screen/expense_tracker_app/expense_screen.dart';
-import 'package:demo/task_screen/game_zome/game_home_screen.dart';
+import 'package:demo/task_screen/game_zone/game_home_screen.dart';
 import 'package:demo/task_screen/get_x_base_code/screen/getx_dashboard_screen.dart';
+import 'package:demo/task_screen/graph_list/graph_dashboard.dart';
 import 'package:demo/task_screen/static_task/developer_profile.dart';
 import 'package:demo/task_screen/stories_view_app/home_page.dart';
-import 'package:demo/task_screen/worked_hour/work_hours_form.dart';
 
 import 'package:flutter/material.dart';
 
@@ -201,8 +200,8 @@ class MyDashboard extends StatelessWidget {
                                 );
                               }),
                           CommonCard.commonCard(
-                              title: "Games Zone",
-                              iconData: Icons.videogame_asset,
+                              title: "Games App",
+                              iconData: Icons.gamepad_sharp,
                               onTap: () {
                                 CommonNavigator.navigateTo(
                                   context,
@@ -210,16 +209,25 @@ class MyDashboard extends StatelessWidget {
                                 );
                               }),
                           CommonCard.commonCard(
-                              title: "Coin Game",
-                              iconData: Icons.gamepad_outlined,
+                              title: "Minimal App",
+                              iconData: Icons.app_shortcut_sharp,
                               onTap: () {
                                 CommonNavigator.navigateTo(
                                   context,
-                                  className: const CoinGameScreen(),
+                                  className: const GameHomeScreen(),
                                 );
                               }),
                           CommonCard.commonCard(
-                              title: "Expenses Tracker",
+                              title: "Animation App",
+                              iconData: Icons.animation,
+                              onTap: () {
+                                CommonNavigator.navigateTo(
+                                  context,
+                                  className: const AnimationHomeScreen(),
+                                );
+                              }),
+                          CommonCard.commonCard(
+                              title: "Local Storage",
                               iconData: Icons.ballot_outlined,
                               onTap: () {
                                 CommonNavigator.navigateTo(
@@ -228,25 +236,17 @@ class MyDashboard extends StatelessWidget {
                                 );
                               }),
                           CommonCard.commonCard(
-                              title: "Work Hours Tracker",
-                              iconData: Icons.timeline_rounded,
+                              title: "Graph List",
+                              iconData: Icons.auto_graph,
                               onTap: () {
                                 CommonNavigator.navigateTo(
                                   context,
-                                  className: const WorkHoursTracker(),
+                                  className: const GraphDashboard(),
                                 );
                               }),
+
                           CommonCard.commonCard(
-                              title: "Counter Animation",
-                              iconData: Icons.timer,
-                              onTap: () {
-                                CommonNavigator.navigateTo(
-                                  context,
-                                  className: const WrongAnswer(),
-                                );
-                              }),
-                          CommonCard.commonCard(
-                              title: "Stories Tutorial",
+                              title: "Dynamic List",
                               iconData: Icons.amp_stories_outlined,
                               onTap: () {
                                 CommonNavigator.navigateTo(

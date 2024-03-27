@@ -12,8 +12,8 @@ class SnakeGame extends StatefulWidget {
 }
 
 class _SnakeGameState extends State<SnakeGame> {
-  int squarePerRow = 40;
-  int squarePerCol = 70;
+  int squarePerRow = 26;
+  int squarePerCol = 45;
 
   final fontStyle = TextStyle(color: Colors.white, fontSize: 20.sp);
   final randomGen = Random();
@@ -113,7 +113,7 @@ class _SnakeGameState extends State<SnakeGame> {
                                 color = Colors.black;
                               }
                               return Container(
-                                margin: EdgeInsets.all(1.sp),
+                                margin: EdgeInsets.all(0.5.sp),
                                 decoration: BoxDecoration(color: color, shape: BoxShape.circle),
                               );
                             },

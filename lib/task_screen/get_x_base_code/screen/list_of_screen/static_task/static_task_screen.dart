@@ -2,6 +2,7 @@ import 'package:demo/core/common/common_function.dart';
 import 'package:demo/core/constant/z_file_constant.dart';
 import 'package:demo/task_screen/get_x_base_code/controller/news_static_controller.dart';
 import 'package:demo/task_screen/get_x_base_code/screen/list_of_screen/static_task/daily_skin_screen/daily_skin_care_dashboard_screen.dart';
+import 'package:demo/task_screen/get_x_base_code/screen/list_of_screen/static_task/donut_app_screen/donut_home_screen.dart';
 import 'package:demo/task_screen/get_x_base_code/screen/list_of_screen/static_task/modern_smart_home_ui/home_page.dart';
 import 'package:demo/task_screen/get_x_base_code/screen/list_of_screen/static_task/news_screen/news_setting_screen.dart';
 import 'package:demo/task_screen/get_x_base_code/screen/list_of_screen/static_task/news_screen/news_detail_screen.dart';
@@ -53,6 +54,12 @@ class StaticTaskScreen extends StatelessWidget {
                           Get.to(() => const ModernSmartHomePage());
                         },
                         text: "Modern Smart Home Screen",
+                      ),
+                      commonCardItem(
+                        onTap: () {
+                          Get.to(() => const DonutHomePage());
+                        },
+                        text: "Donut App Screen",
                       ),
                     ],
                   ),

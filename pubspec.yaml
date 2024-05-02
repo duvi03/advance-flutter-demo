@@ -85,6 +85,7 @@ flutter:
   assets:
     - assets/icons/
     - assets/icons/smart_home_icon/
+    - assets/icons/donut_icon/
     - assets/images/
     - json/
   #   - images/a_dot_ham.jpeg

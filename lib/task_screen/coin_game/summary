@@ -8,3 +8,73 @@
 - Display Which Player has maximum Coin Value
 - Display All Player With Number Of Coins And Total Value Of Coins
 - No internet is required for this task
+
+import 'dart:math';
+
+void main() {
+  int noOfPlayer = 4;
+  int noOfCoins = 10;
+
+  print("Number of player $noOfPlayer");
+  print("Number of coins $noOfCoins");
+
+  // The Coins Will have Random Value Between 1 to 100
+  List coins = [];
+
+  for (int i = 0; i < noOfCoins; i++) {
+    coins.add(Random().nextInt(100));
+  }
+  print("Generate random coin value $coins");
+
+  // Divide Coins Between Players In Sequence
+  Map<int, List<int>> playerCoinMap = {};
+
+  for (int i = 0; i < noOfPlayer; i++) {
+    playerCoinMap[i + 1] = [];
+  }
+
+  for (int i = 0; i < noOfCoins; i++) {
+    int intIndex = i % noOfPlayer + 1;
+    playerCoinMap[intIndex]?.add(coins[i]);
+  }
+
+  print("Distribute coins to players in sequence $playerCoinMap");
+
+  //Display Which Player Has Maximum  Number Of Coins
+  int maxCoin = 0;
+  int maxPlayerOfNoOfCoins =0;
+  playerCoinMap.forEach((player,playerCoins){
+    if(playerCoins.length > maxCoin){
+      maxCoin = playerCoins.length;
+      maxPlayerOfNoOfCoins = player;
+    }
+  });
+
+  print("Player $maxPlayerOfNoOfCoins Has Maximum  Number Of Coins");
+
+  // Display Which Player has maximum Coin Value
+  int maxPlayerOfCoinValue = 0;
+  int maxCoinValue = 0;
+
+  for(var element in coins){
+    if(element > maxCoinValue){
+      maxCoinValue = element;
+    }
+  }
+
+  playerCoinMap.forEach((player,playerCoins){
+    if(playerCoins.contains(maxCoinValue)){
+      maxPlayerOfCoinValue = player;
+    }
+  });
+
+  print("Player $maxPlayerOfCoinValue Has Maximum Coins value");
+
+  //Display All Player With Number Of Coins And Total Value Of Coins
+  print("Player  No Of Coins  Total Value Of Coins");
+  playerCoinMap.forEach((player,playerCoins){
+    int noOfCoin = playerCoins.length;
+    int sum = playerCoins.reduce((a,b) => a + b);
+    print("    $player                $noOfCoin                   $sum");
+  });
+}

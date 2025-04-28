@@ -34,8 +34,8 @@ class DeveloperProfile extends StatelessWidget {
               ),
               SizedBox(height: 16.sp),
               CommonWidgets.customTextView(
-                text: 'Dhruvi',
-                fontSize: 24,
+                text: 'Dhruvi Patel',
+                fontSize: 26,
                 fontWeight: FontWeight.bold,
               ),
               CommonWidgets.customTextView(

@@ -41,10 +41,10 @@ Future<File?> cropImage(String? filePath) async {
     if (filePath == null) {
       return null;
     }
-    File? croppedImg = await ImageCropper().cropImage(
+    CroppedFile? croppedImg = await ImageCropper().cropImage(
       sourcePath: filePath,
-      cropStyle: CropStyle.rectangle,
-      aspectRatioPresets: [CropAspectRatioPreset.original, CropAspectRatioPreset.original, CropAspectRatioPreset.ratio4x3],
+      // cropStyle: CropStyle.rectangle,
+      // aspectRatioPresets: [CropAspectRatioPreset.original, CropAspectRatioPreset.original, CropAspectRatioPreset.ratio4x3],
     );
     if (croppedImg == null) {
       return null;
